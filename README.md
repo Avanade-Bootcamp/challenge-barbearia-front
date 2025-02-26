@@ -1,59 +1,42 @@
-# ChallengeBarbeariaFront
+# :barber: Challenge - Barbearia
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+Este repositório contém um projeto desenvolvido como parte do desafio **"Criando um APP Full Stack de Agendamento de Barbearia com Java e Angular"**. O objetivo foi construir uma aplicação completa para gerenciamento de agendamentos em uma barbearia, utilizando **Angular** no frontend e **Java** no backend.
 
-## Development server
+## :rocket: Tecnologias Utilizadas
+- **Angular** para a interface do usuário
+- **Java** (Spring Boot) para o backend
+- **TypeScript**
+- **HTML & CSS**
+- **Banco de Dados** PostgreSQL
 
-To start a local development server, run:
+## :pushpin: Funcionalidades Implementadas
+:white_check_mark: Cadastro de usuários e clientes<br>
+:white_check_mark: Agendamento de horários<br>
+:white_check_mark: Listagem de serviços oferecidos pela barbearia<br>
+:white_check_mark: Integração com banco de dados<br>
+:white_check_mark: Autenticação e autorização de usuários *(se aplicável)*
 
-```bash
-ng serve
-```
+## :desktop_computer: Interfaces Desenvolvidas 
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Home
+![image](https://github.com/user-attachments/assets/cf818b9d-b744-4559-b6f5-4a66cefeb8b6)
 
-## Code scaffolding
+### Contacts
+![image](https://github.com/user-attachments/assets/544d0698-ccae-4b85-b4fb-23524a416fff)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Register appointment
+![image](https://github.com/user-attachments/assets/a6fc6776-167c-468f-8d87-e56da4b53d1e)
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 
 
-```bash
-ng generate --help
-```
+## :telephone_receiver: Contato
+Caso tenha dúvidas ou sugestões, fique à vontade para entrar em contato comigo através das minhas redes sociais:
 
-## Building
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-gabriel--rosaa-blue?logo=linkedin)](https://www.linkedin.com/in/gabriel-rosaa/)
+[![GitHub](https://img.shields.io/badge/GitHub-Gabriel--Pink-black?logo=github)](https://github.com/Gabriel-Pink)
+![Discord](https://img.shields.io/badge/Discord-gabriel.tec-%237289DA?logo=discord)
+[![Whatsapp](https://img.shields.io/badge/Whatsapp-(11)%2091356--4300-%237289DA?logo=whatsapp)](https://wa.me/+5511913564300)
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+:pushpin: **Nota:** Este projeto foi desenvolvido para fins educacionais e de aprimoramento técnico.

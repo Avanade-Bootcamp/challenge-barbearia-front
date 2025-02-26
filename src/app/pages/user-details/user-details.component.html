@@ -1,0 +1,39 @@
+
+<h2>Register appointment</h2>
+
+<div class="form">
+  <div class="inputs">
+    <input type="date" [(ngModel)]="date" id="date">
+    <select [(ngModel)]="time">
+        <option *ngFor="let option of options" value="{{ option.value }}">
+            {{ option.display }}
+        </option>
+    </select>
+  </div>
+
+  <div>
+    <button (click)="sendAppointments()">Cadastrar</button>
+  </div>
+  
+</div>
+
+<!-- <p>{{ dateTime }}</p> -->
+
+<h2>User Schedules</h2>
+
+<!-- Verifica se há agendamentos -->
+<div *ngIf="appointment.length > 0; else noAppointments" class="tags-container">
+
+  
+    <app-schedule-tag *ngFor="let item of appointment" [date]="item.dateTime">
+  
+    </app-schedule-tag>
+  
+  
+  
+</div>
+
+<!-- Mensagem caso não haja agendamentos -->
+<ng-template #noAppointments>
+  <p>Nenhum agendamento encontrado.</p>
+</ng-template>

@@ -14,4 +14,15 @@ export class ContactService {
   getAllContacts(): Observable<any> {
     return this.http.get(this.apiUrl);
   }
+
+  createContact(name: any, email: any): Observable<any> {
+    const userData = {
+      name,
+      email
+    };
+    
+    return this.http.post(this.apiUrl, userData);
+  }
+
+  
 }

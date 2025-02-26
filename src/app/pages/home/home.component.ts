@@ -1,19 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../../services/contact.service';
 import { CommonModule } from '@angular/common';
+import { ContactComponent } from '../../components/contact/contact.component';
+import { Contact } from '../../model/contact.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, ContactComponent],
+  standalone: true,
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
 
-  contacts: any[] = [];
+  contacts: Contact[] = [];
   isLoading: boolean = false;
 
-  constructor(private contactService: ContactService) {  }
+  constructor(private contactService: ContactService, private router: Router) {  }
 
   ngOnInit() {
     this.contactService.getAllContacts().subscribe({
@@ -26,7 +30,10 @@ export class HomeComponent implements OnInit {
       complete: () => this.isLoading = false
     });
 
+  }
 
+  createContact() {
+    this.router.navigate(["/create-contact"])
   }
 
 }

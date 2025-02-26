@@ -1,0 +1,28 @@
+.main {
+    padding: 20% 8% ;
+    background-color: #ececec;
+
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.container {
+    background-color: #fdfdfd;
+    padding: 30px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.header {
+    position: relative;
+    height: 30px;
+}
+
+.header img {
+    width: 20%;
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+}

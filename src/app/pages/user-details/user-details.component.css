@@ -1,0 +1,54 @@
+input, select {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tags-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.form {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 13px;
+
+  justify-content: space-between;
+}
+
+.inputs {
+  display: flex;
+  gap: 13px;
+}
+
+.inputs:first-child {
+  width: 60%;
+}
